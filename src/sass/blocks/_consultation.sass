@@ -1,0 +1,39 @@
+.consultation
+   min-height: 680px
+   padding: 100px 0 92px 0
+   background: url(../img/consultation/consultation-bg.jpg) center (center/cover) no-repeat
+   &__descr
+      font-size: 20px
+      font-weight: 500
+      text-align: left
+      color: #ffffff
+      margin-top: 80px
+   .error
+      border: 1px solid red
+      font-size: 13px
+   label.error
+      display: block
+      margin: 0 auto 10px
+      border: none
+      color: #ffffff
+// -----------------media ---------------------------------------------------
+@media(max-width: 992px)
+   .consultation
+      min-height: auto
+      padding: 65px 0 65px 0
+      & .section__title_left
+         font-size: 32px
+@media(max-width: 768px)
+   .consultation
+      .section__title_left
+         text-align: center
+         font-size: 24px
+      &__descr
+         margin-top: 40px
+         text-align: center
+@media(max-width: 576px)
+   .consultation
+      .section__title_left
+         font-size: 18px
+      &__descr
+         font-size: 17px

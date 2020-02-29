@@ -1,0 +1,100 @@
+.promo
+   min-height: 650px
+   padding: 21px 0 93px 0
+   background: url(../img/header/main-bg.jpg) center (center/cover) no-repeat
+   &__wrapper
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+      margin-top: 91px
+      justify-content: flex-start
+   &__header
+      font-size: 42px
+      font-weight: 700
+      text-align: right
+      color: #ffffff
+      text-transform: uppercase
+   &__subheader
+      font-size: 24px
+      font-weight: 500
+      text-align: right
+      color: #ffffff
+      margin-top: 17px
+      text-transform: uppercase
+   &-icons
+      display: flex
+      align-items: center
+      justify-content: flex-end
+      margin-top: 66px
+      &__item
+         display: flex
+         flex-direction: column
+         flex-basis: 125px
+         text-align: center
+         margin-left: 45px
+         & span
+            font-size: 14px
+            font-weight: 500
+            text-align: center
+            color: #ffffff
+      & img
+         align-self: center
+         max-width: 45px
+   &__link
+      font-size: 16px
+      font-weight: 500
+      text-align: right
+      color: #ffffff
+      margin-top: 18px
+      & a
+         text-decoration: underline
+         color: #ffffff
+         &:hover
+            color: #ffffff
+// -----------------media 1200---------------------------------------------------
+@media(max-width: 1200px)
+   .container
+      padding: 0 30px 0 30px
+// -----------------media 992---------------------------------------------------
+@media(max-width: 992px)
+   .container
+      padding: 0 20px 0 20px
+   .promo
+      &__wrapper
+         flex-direction: column
+         align-items: center
+      &__header
+         text-align: center
+      &-icons
+         justify-content: center
+         &__item
+            margin: 0 23px 0 23px
+// -----------------media 768---------------------------------------------------
+@media(max-width: 768px)
+   .promo
+      min-height: 550px
+      padding: 21px 0 60px 0
+      &__wrapper
+         margin-top: 60px
+      &__header
+         font-size: 39px
+      &__subheader
+         font-size: 21px
+         text-align: center
+      &-icons
+         margin-top: 40px
+// -----------------media 576---------------------------------------------------
+@media(max-width: 576px)
+   .container
+      padding: 0 15px 0 15px
+   .promo
+      padding: 21px 0 60px 0
+      min-height: 450px
+      &__wrapper
+         margin-top: 45px
+      &__header
+         font-size: 22px
+      &__subheader
+         font-size: 17px
+      &-icons
+         display: none

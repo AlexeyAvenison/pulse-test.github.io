@@ -1,0 +1,223 @@
+.catalog
+   padding-bottom: 100px
+   
+   &__tabs
+      display: flex
+      justify-content: center
+      align-items: center
+      list-style-type: none
+   &__tab
+      position: relative
+      width: 220px
+      height: 50px
+      border: solid 2px #d0d0d0
+      margin: 0 5px 0
+      transform: skewX(-25deg)
+      text-transform: uppercase
+      font-size: 18px
+      font-weight: 500
+      text-align: center
+      color:#6b6b6b
+      line-height: 49px
+      cursor: pointer
+      overflow: hidden
+      background-color: rgba(255, 255, 255, 1)
+      z-index: 5
+      &:hover
+         box-shadow: 10px 10px 20px         
+      & div
+         position: relative
+         margin: 0 auto
+         transform: skewX(+25deg)
+         z-index: 0
+      &_active
+         background-color: #c70101
+         color: #ffffff
+         border: none
+         &:hover
+            box-shadow: 10px 10px 20px
+   &__carousel
+      display: none  
+   &__content
+      display: none
+      justify-content: flex-start
+      align-items: center
+      margin-top: 60px
+      flex-wrap: wrap
+      &_active
+         display: flex
+   &-item
+      position: relative
+      width: 300px
+      max-width: 100%
+      min-height: 440px
+      border: solid 2px #e8e8e8
+      overflow: hidden
+      margin: 0 8px 20px
+      padding: 20px
+      &__wrapper
+         height: 345px
+      &__wrap        /* catalog-item__wrap */
+         position: absolute
+         top: 0
+         left: 101%
+         width: 100%
+         padding: 20px 20px 0px 20px
+         background-color: #fff
+         height: 355px
+         overflow: hidden
+         transition: 0.5s
+         &_active
+            left: 0
+      &__img
+         height: 200px
+         display: block
+         margin: 0 auto 20px
+         max-width: 100%
+      &__subtitle
+         font-size: 16px
+         font-weight: 700
+         text-align: center
+         color: #0d0d0d
+         max-height: 25px
+         overflow: hidden
+      &__descr
+         font-size: 14px
+         font-weight: 300
+         text-align: center
+         color: #0d0d0d
+         max-height: 45px
+         overflow: hidden
+      &__link
+         display: block
+         margin: 0 auto
+         width: 88px
+         text-decoration: none
+         font-size: 14px
+         font-weight: 700
+         text-align: center
+         color: $text-color-red
+         border-bottom: 2px solid $text-color-red
+         margin-top: 17px
+         &:hover
+            color: $text-color-red
+            text-decoration: none
+      &__list
+         background-color: #ffffff
+         list-style-type: none
+         font-size: 14px
+         font-weight: 300
+         text-align: left
+         color: #555555
+         overflow: hidden
+         transition: 0.5s
+         padding-left: 20px
+         & li
+            position: relative
+            margin-bottom: 15px
+            &::before
+               position: absolute
+               top: 12%
+               left: -20px
+               display: block
+               content: ''
+               width: 5px
+               height: 5px
+               background-color: $text-color-red
+      &__back
+         position: absolute
+         bottom: 0
+         left: 50%
+         transform: translate(-50%)
+         text-decoration: none
+         font-size: 14px
+         font-weight: 700
+         text-align: center
+         color: $text-color-red
+         border-bottom: 2px solid $text-color-red
+         z-index: 3
+         &:hover
+            text-decoration: none
+            color: $text-color-red
+      hr
+         width: 100%
+         height: 1px
+         background-color: #e8e8e8
+         border: none
+         margin: 10px 0 20px
+      &__footer
+         display: flex
+         justify-content: space-between
+         align-items: center
+      &__old-price
+         font-size: 14px
+         font-weight: 300
+         text-align: left
+         color: #555555
+         text-decoration: line-through
+      &__price
+         font-size: 20px
+         font-weight: 700
+         text-align: left
+         color: #050505
+   .select-tabs
+      display: none
+      width: 270px
+      height: 40px
+      border-radius: 5px
+      text-align: center
+      margin: 0 auto
+      background-color: $text-color-red
+      font-size: 14px
+      font-weight: 700
+      text-align: center
+      color: #fff
+      text-decoration: none
+      text-transform: uppercase
+      padding-left: 80px
+      & option
+         margin-bottom: 10px
+@media(max-width: 992px)
+   .catalog
+      &__content
+         justify-content: space-between
+@media(max-width: 768px)
+   .catalog
+      &__tabs
+         padding: 0
+      &-item
+         margin: 0 auto 20px
+@media(max-width: 576px)
+   .catalog
+      .select-tabs
+         display: block
+      .section__title
+         font-size: 21px
+         margin-bottom: 15px
+      // &__tab
+      //    display: none
+      &__tabs
+         display: none
+         &_active
+            display: block
+      &__arrow
+         margin: 10px 20% 0
+         cursor: pointer
+         & img
+            width: 70%
+      &__content
+         margin-top: 30px
+   // .catalog .slick-arrow
+   //    position: absolute
+   //    border: none
+   //    bottom: 0
+   //    background-color: #ffffff
+   //    z-index: 3
+   // .catalog .slick-next
+   //    right: 0
+   // .catalog .slick-prev
+   //    right: auto
+   //    left: 0
+   // .catalog .slick-slide
+   //    width: 150px
+   //    margin: 0 55px

@@ -1,0 +1,49 @@
+.header
+   display: flex
+   align-items: center
+   justify-content: space-between
+   &__logo
+      width: 251px
+      & img
+         width: 100%
+   &__official
+      font-size: 12px
+      font-weight: 500
+      text-align: center
+      color: #ffffff
+      & span
+         display: block
+         font-size: 18px
+         font-weight: 700
+         margin-top: 5px
+   &__phone
+      display: block
+      font-size: 18px
+      font-weight: 700
+      text-align: right
+      color: #ffffff
+      &:hover
+         color: #ffffff
+         text-decoration: none
+   &__contacts
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+// -----------------media 576---------------------------------------------------
+
+@media(max-width: 768px)
+   .header
+      &__logo
+         width: 170px
+      &__official
+         display: none
+@media(max-width: 576px)
+   .header
+      &__logo
+         width: 145px
+      &__contacts
+         .button
+            font-size: 10px
+            width: 110px
+      &__phone
+         font-size: 12px

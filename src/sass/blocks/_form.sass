@@ -1,0 +1,25 @@
+.feed-form
+   display: flex
+   flex-direction: column
+   align-items: flex-start
+   margin-top: 36px
+   width: 300px
+   max-width: 90%
+   & input
+      width: 100%
+      height: 50px
+      padding: 0 20px 0 20px
+      font-size: 14px
+      font-weight: 300
+      text-align: left
+      color: $text-form
+      margin-bottom: 15px
+      border-radius: 5px
+      border: none
+      &:nth-child(3)
+         margin-bottom: 20px
+// -----------------media ---------------------------------------------------
+@media(max-width: 768px)
+   .feed-form
+      display: block
+      margin: 36px auto 0
